@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+        .container{
+          left: 0;
+        }
+        .image-wrapper img{
+          content: url("images/media1.png");
+        }
+        .top-right-corner img{
+          height: 100px;
+        }
+        .top-left-corner img{
+          display: none;
+        }
+        .second-section-about{
+          flex-direction: column;
+      } 
+      .second-section-about-text {
+        order: 1;
+      }
+      .second-content-media{
+        order: 2;
+      }
+    }
+
+  @media only screen and (min-width: 600px) and (max-width:1023px) {
+    .container{
+      left: 0;
+    }
+    .image-wrapper img{
+      content: url("images/tablets1.png");
+    }
+    .second-section-about-text {
+      order: 1;
+    }
+    .second-content-media{
+      order: 2;
+    }
+    .second-section-about{
+      flex-direction: column;
+  }
+  
+  .second-section-about-text {
+      text-align: left; /* Align text to the left */
+  }
+
+}
+@media only screen and (min-width: 1024px) {
+  
+}

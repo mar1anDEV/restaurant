@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #ffa500;
+    overflow: hidden;
+    
+}
+.container{
+    position: relative;
+    left: 15%;
+}
+.nav-item a{
+    color: #255b4b;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.first-section {
+    width: 100%;
+    height: auto; /* Section fills the viewport height */
+    background-color: #ffa500; /* Optional: Background color */
+    padding-bottom: 43px;
+}
+.first-section-content{
+    display: flex;
+    justify-content: center;
+}
+.image-wrapper,
+.top-right-corner{
+    display: block; /* or inline-block to avoid full-width behavior */
+    max-width: 100%; /* Ensure the parent can shrink */
+    height: auto; /* The parent’s height will adjust to the image’s height */
+}
+.hero-banner{
+    opacity: 0; /* Start with the image invisible */
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInImage 1s ease-out forwards;
+}
+@keyframes fadeInImage {
+    from {
+        opacity: 0; /* Start completely invisible */
+        transform: translateY(20px); /* Start below its final position */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* End at its final position */
+    }
+    
+}
+.image-wrapper img,
+.top-right-corner img,
+.second-content-media img{
+    display: block;
+    max-width: 100%; /* Ensure the image doesn't overflow the parent */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the parent */
+}
+
+
+
+
+.second-section{
+    width: 100%;
+    height: auto;
+    background-color: #255b4b;
+}
+.second-content-media{
+    max-width: fit-content;
+    float: left; /* or float: right; */
+    margin: 0 15px 15px 0; /* Adjust margins as needed */
+}
+.second-section-about{
+    display: flex;
+    flex-direction: row;
+}
+.second-section-about-text{
+    padding: 10px  20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.second-section-about-text-paragraph {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Limit the maximum width for larger screens */
+    text-align: justify; /* Justify the text for a cleaner look */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+.second-section-about-text-paragraph p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffa500;
+
+}
+
+.second-section-about-text {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: adds a vertical motion effect */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* The class that will be added when the element comes into view */
+.second-section-about-text.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Reset vertical position */
+}
+  .second-section-about-text-heading h1 span{
+    font-size: 50px;
+    color: #ffa500;
+    font-weight: 400;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+.container-custom{
+    left: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffa500;  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
