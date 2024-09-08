@@ -42,6 +42,9 @@
   .second-section-about-text {
       text-align: left; /* Align text to the left */
   }
+  .container-custom{
+    flex-direction: column;
+  }
 
 }
 @media only screen and (min-width: 1024px) {

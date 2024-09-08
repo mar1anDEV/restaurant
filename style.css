@@ -125,14 +125,35 @@
 
 .container-custom{
     left: 0;
+    overflow: hidden;
 }
-.card {
+.third-section{
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background-color: #ffa500;  
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
-  }
+    justify-content: center;
+}
+.description-body-third-section{
+    text-align: center;
+    padding: 60px;
+}
+.card{
+    height: auto;
+    width: 400px;
+}
+.container-custom{
+    height: auto;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-md-4{
+    padding: 10px 20px;
+}
+
+
 
 
 
