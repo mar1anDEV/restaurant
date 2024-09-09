@@ -12,6 +12,7 @@
 }
 .container{
     position: relative;
+    display: flex;
     left: 15%;
 }
 .nav-item a{
@@ -123,10 +124,7 @@
     letter-spacing: 0.1em;
   }
 
-.container-custom{
-    left: 0;
-    overflow: hidden;
-}
+
 .third-section{
     height: auto;
     width: 100%;
@@ -138,24 +136,70 @@
     text-align: center;
     padding: 60px;
 }
-.card{
-    height: auto;
-    width: 400px;
+.custom-card-table{
+    left: 0;
 }
-.container-custom{
-    height: auto;
+.card-img{
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.7);
+}
+.col-md-4,
+.col-sm-6,
+.mb-4{
+    padding: 20px 20px;
+}
+  
+.fourth-section-main {
+    background-color: #ffa500; /* Orange background */
+    padding: 20px; /* Consistent padding */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 400px; /* Minimum height for better centering */
+    padding: 60px;
+}
+.map-section {
+    flex: 2;
+  }
+  
+  .map {
     width: 100%;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  .info-section{
+    padding: 0 20px;
+  }
+.fourth-section-content{
+    background-color: #255b4b;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
 }
-.col-md-4{
-    padding: 10px 20px;
+.schedule-custom{
+    display: flex;
+    flex-direction: column;
+    
 }
-
-
-
-
+.info-section h4,
+.description-body-third-section h1{
+    color: #ffa500;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 0.1em;
+}
+.list-unstyled li,
+.contact-body p{
+    color: #ffa500;
+    font-size: 15px;
+    font-family:  sans-serif;
+}
+  
 
 
 

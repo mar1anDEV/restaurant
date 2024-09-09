@@ -20,6 +20,21 @@
       .second-content-media{
         order: 2;
       }
+      .card-img{
+        object-fit: contain;
+      }
+      .fourth-section-content{
+        flex-direction: column !important;
+      }
+      .info-section{
+        padding: 0;
+      }
+      .fourth-section-main{
+        padding: 20px;
+      }
+      .map-section{
+        min-width: 200px;
+      }
     }
 
   @media only screen and (min-width: 600px) and (max-width:1023px) {
